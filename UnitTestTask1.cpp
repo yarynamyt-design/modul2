@@ -13,9 +13,9 @@ namespace UnitTestTask1
 		
 		TEST_METHOD(TestMethod1)
 		{
-			std::list<int> lst = { 1, 2, 3, 4, 5 };
+			slist<int> lst = { 1, 2, 3, 4, 5 };
 			removeEvenOrThrow(lst);
-			std::list<int> expected = { 1, 3, 5 };
+			list<int> expected = { 1, 3, 5 };
 			Assert::IsTrue(lst == expected);
 		}
 	};
